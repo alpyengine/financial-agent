@@ -1,0 +1,24 @@
+# --- Capa IA (abstracción universal — NUNCA importar openai directamente) ---
+litellm>=1.40
+
+# --- Ingesta Gmail ---
+google-api-python-client>=2.0
+google-auth>=2.0
+google-auth-oauthlib>=1.0
+google-auth-httplib2>=0.2
+
+# --- Entrega Telegram (Bot API vía HTTP) ---
+requests>=2.31
+
+# --- Almacenamiento (SQLite MVP -> PostgreSQL prod cambiando DATABASE_URL) ---
+sqlalchemy>=2.0
+
+# --- Config y entorno ---
+pydantic-settings>=2.0
+python-dotenv>=1.0
+
+# --- Logging ---
+loguru>=0.7
+
+# --- Scheduler ---
+schedule>=1.2

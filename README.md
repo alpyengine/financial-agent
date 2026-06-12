@@ -34,7 +34,7 @@ cd financial-agent
 python3 -m venv .venv
 source .venv/bin/activate        # macOS / Linux
 
-# 3. Instalar dependencias (cuando exista requirements.txt)
+# 3. Instalar dependencias
 pip install -r requirements.txt
 
 # 4. Configurar variables de entorno
@@ -71,4 +71,5 @@ DATABASE_URL=sqlite:///data/financial_agent.db
 
 | Versión | Descripción del cambio |
 |---------|-----------------------------------------------------|
+| v0.2.0  | feat: MVP funcional — Gmail → LiteLLM → digest → Telegram (cada 5h) |
 | v0.1.0  | chore: inicialización del proyecto (estructura base, Git, documentación) |

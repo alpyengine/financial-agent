@@ -1,0 +1,11 @@
+services:
+  financial-agent:
+    build: .
+    container_name: financial-agent
+    env_file: .env
+    volumes:
+      # Persistimos token de Gmail, base de datos y logs entre reinicios.
+      - ./data:/app/data
+      # credentials.json en solo lectura (no se modifica nunca).
+      - ./credentials.json:/app/credentials.json:ro
+    restart: unless-stopped
