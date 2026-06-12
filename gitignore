@@ -1,0 +1,38 @@
+# ===========================================================================
+# Financial Agent — .gitignore
+# ===========================================================================
+
+# --- Secretos y credenciales (NUNCA commitear) ---
+.env
+credentials.json
+
+# Datos locales: base SQLite + token OAuth de Gmail (gmail_token.json).
+# Se ignora todo el contenido de data/ pero se conserva la carpeta.
+data/*
+!data/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# --- Logs ---
+*.log
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.swp
